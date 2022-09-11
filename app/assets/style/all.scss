@@ -1,11 +1,15 @@
-@import "../../../node_modules/bootstrap/scss/functions";
-@import "./helpers/variables";
-@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import '../../../node_modules/bootstrap/scss/functions';
+@import './helpers/variables';
+@import '../../../node_modules/bootstrap/scss/bootstrap';
 
-@import './base/reboot.scss';
-@import './utilities/utilities.scss';
+@import './utilities/utilities';
+@import './base/root';
+@import './base/reboot';
+@import './base/base';
 
-@import './layout/navbar.scss';
-@import './layout/footer.scss';
+@import './mixins/mixins';
 
-@import './pages/index.scss';
+@import './layout/navbar';
+@import './layout/footer';
+
+@import './pages/index';

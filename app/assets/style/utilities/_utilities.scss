@@ -105,6 +105,7 @@ $utilities: map-merge(
       )
     ),
     "border-top": (
+      responsive: true,
       property: border-top,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
@@ -113,6 +114,7 @@ $utilities: map-merge(
     ),
     "border-end": (
       property: border-right,
+      responsive: true,
       class: border-end,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
@@ -121,6 +123,7 @@ $utilities: map-merge(
     ),
     "border-bottom": (
       property: border-bottom,
+      responsive: true,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
         0: 0,
@@ -128,6 +131,7 @@ $utilities: map-merge(
     ),
     "border-start": (
       property: border-left,
+      responsive: true,
       class: border-start,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
@@ -457,7 +461,11 @@ $utilities: map-merge(
     "font-family": (
       property: font-family,
       class: font,
-      values: (monospace: var(--#{$prefix}font-monospace))
+      values: (
+        monospace: var(--#{$prefix}font-monospace),
+        squada: var(--#{$prefix}font-squada),
+        paytone: $font-family-paytone
+      )
     ),
     "font-size": (
       rfs: true,
@@ -487,9 +495,15 @@ $utilities: map-merge(
       class: lh,
       values: (
         1: 1,
+        2: 2,
         sm: $line-height-sm,
         base: $line-height-base,
         lg: $line-height-lg,
+        squada: $line-height-squada,
+        squada-sm: $line-height-squada-sm,
+        squada-lg: $line-height-squada-lg,
+        squada-xl: $line-height-squada-xl,
+        paytone: $line-height-paytone,
       )
     ),
     "text-align": (
@@ -557,6 +571,7 @@ $utilities: map-merge(
     // scss-docs-start utils-bg-color
     "background-color": (
       property: background-color,
+      responsive: true,
       class: bg,
       local-vars: (
         "bg-opacity": 1
