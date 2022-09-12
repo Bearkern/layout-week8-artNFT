@@ -19,5 +19,14 @@ $(function () {
       el: '.swiper-scrollbar'
     }
   });
+  var searchBarOpener = document.getElementById("searchBarOpener");
+  var searchBar = document.getElementById("searchBar");
+  var searchBarCloser = document.getElementById("searchBarCloser");
+  searchBarOpener.addEventListener('click', function () {
+    searchBar.classList.remove("d-none");
+  });
+  searchBarCloser.addEventListener('click', function () {
+    searchBar.classList.add("d-none");
+  });
 });
 //# sourceMappingURL=all.js.map
