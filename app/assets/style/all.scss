@@ -1,12 +1,8 @@
 @import '../../../node_modules/bootstrap/scss/functions';
 @import './helpers/variables';
-@import '../../../node_modules/bootstrap/scss/bootstrap';
+@import './bootstrap/bootstrap';
 
-@import './utilities/utilities';
-@import './base/root';
-@import './base/reboot';
 @import './base/base';
-
 @import './mixins/mixins';
 
 @import './layout/navbar';

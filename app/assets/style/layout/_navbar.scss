@@ -6,6 +6,9 @@
     height: 1px;
     width: 100%;
     background-color: $black;
+    @include media-breakpoint-up(lg) {
+      top: 104px;
+    }
   }
   &-brand {
     @include hide-text;
@@ -15,6 +18,11 @@
     @include media-breakpoint-up(lg) {
       width: 190px;
       height: 40px;
+    }
+  }
+  input[type="search"] {
+    @include media-breakpoint-up(lg) {
+      width: 288px;
     }
   }
   &-toggler {
@@ -36,14 +44,15 @@
   }
   .navbar-collapse {
     position: absolute;
-    // background-color: $white;
-    width: 100%;
     z-index: 1;
     top: 57px;
     left: 0;
     @include media-breakpoint-up(lg) {
       position: initial;
-      // background-color: transparent;
     }
+  }
+  .search-bar {
+    position: fixed;
+    left: 0;
   }
 }

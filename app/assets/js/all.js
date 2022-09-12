@@ -20,4 +20,14 @@ $(function() {
       el: '.swiper-scrollbar',
     },
   });
+
+  const searchBarOpener = document.getElementById("searchBarOpener");
+  const searchBar = document.getElementById("searchBar");
+  const searchBarCloser = document.getElementById("searchBarCloser");
+  searchBarOpener.addEventListener('click', () => {
+    searchBar.classList.remove("d-none");
+  });
+  searchBarCloser.addEventListener('click', () => {
+    searchBar.classList.add("d-none");
+  });
 });
