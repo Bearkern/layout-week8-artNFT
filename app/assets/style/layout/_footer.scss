@@ -1,0 +1,11 @@
+.footer {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    height: 4px;
+    width: 100%;
+    background-color: $black;
+  }
+}
