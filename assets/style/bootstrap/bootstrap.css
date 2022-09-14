@@ -8624,6 +8624,10 @@ fieldset:disabled .btn {
   opacity: 0.75 !important;
 }
 
+.opacity-85 {
+  opacity: 0.85 !important;
+}
+
 .opacity-100 {
   opacity: 1 !important;
 }
