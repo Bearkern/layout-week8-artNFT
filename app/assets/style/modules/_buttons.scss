@@ -4,6 +4,7 @@
 
 .btn-orange {
   @include btn-squada;
+  color: $white;
   border-color: $black;
   background-color: $primary;
 }
@@ -29,6 +30,11 @@
   @include btn-squada;
   background-color: $white;
   border: 1px solid $black;
+  &:hover {
+    --bs-btn-hover-color: #{$white};
+    --bs-btn-hover-bg: #{$primary};
+    --bs-btn-hover-border-color: #{$black};
+  }
 }
 
 .btn-triangle-decoration {
@@ -47,5 +53,19 @@
     &::after {
       border-color: transparent transparent $black transparent;
     }
+  }
+}
+
+.btn-triangle-black {
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 16px 16px;
+    border-color: transparent transparent $black transparent;
   }
 }

@@ -1,24 +1,22 @@
 $(function() {
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.swiper-artist', {
     // Optional parameters
-    direction: 'vertical',
+    slidesPerView: 1,
+    centeredSlides: true,
     loop: true,
 
     // If we need pagination
     pagination: {
-      el: '.swiper-pagination',
+      el: '.swiper-artist-pagination',
+      clickable: true,
     },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
+    
+    breakpoints: {
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 24,
+      }
+    }
   });
 
   const searchBarOpener = document.getElementById("searchBarOpener");
