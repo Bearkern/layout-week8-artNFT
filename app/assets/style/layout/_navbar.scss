@@ -2,7 +2,7 @@
   &::after {
     content: '';
     position: absolute;
-    top: 56px;
+    top: 52px;
     height: 1px;
     width: 100%;
     background-color: $black;
@@ -45,7 +45,7 @@
   .navbar-collapse {
     position: absolute;
     z-index: 1;
-    top: 57px;
+    top: 53px;
     left: 0;
     @include media-breakpoint-up(lg) {
       position: initial;

@@ -5,7 +5,11 @@
 @import './base/base';
 @import './mixins/mixins';
 
-@import './modules/button';
+@import './modules/buttons';
+@import './modules/card';
+@import './modules/images';
+@import './modules/ratios';
+@import './modules/typography';
 
 @import './layout/navbar';
 @import './layout/footer';

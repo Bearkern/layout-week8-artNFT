@@ -3,3 +3,10 @@
   overflow: hidden;
   white-space: nowrap;
 }
+
+@mixin btn-squada {
+  position: relative;
+  font-family: $font-family-squada;
+  --bs-btn-font-size: 1.125rem;
+  --bs-btn-line-height: #{$line-height-squada};
+}
